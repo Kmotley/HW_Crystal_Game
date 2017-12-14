@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Crsytal Game</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<body>
+
+	<div class="container-main">
+		<div id="headerMain">
+			<h1 id=gameTitle>The Crystal Game</h1>
+			<hr>
+			<h2 id=subTitle>Click the Crystals to match the Number and WIN!!</h2>
+		</div>
+		
+		<div id="mainContent">
+		
+		<table id="numTable">
+			<tr id="guessRow">
+				<td id="randomNum">0</td>
+				<td id="userNum">0</td>
+			</tr>
+			</table>
+			
+			<table id="scoreTable">
+			<th>Your Wins</th>
+			<th>Your Total Score</th>
+			<th>Your Loses</th>
+			<tr id="scoreRow">
+				<td id="wins">0</td>
+				<td id="score">0</td>
+				<td id="loses">0</td>
+			</tr>
+			</table>
+			
+		
+		<div id="scoreBox">
+			<span id="userWins"></span>
+			<span id=userScore></span>
+			<span id=userLoses></span>
+		</div>
+
+		</div>
+		<div id="btnsNav">
+				<button id="crystal1"></button>
+				<button id="crystal2"></button>
+				<button id="crystal3"></button>
+				<button id="crystal4"></button>
+			</div>
+			
+			<div class="instructions">
+					</br>
+
+		<h3>Here's how you play the game</h3>
+		<ol>
+			<li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+			<li>There are four crystals above.</li>
+			
+			<li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number.</li>
+			<li>You lose the game if your total score goes above the random number.</li>
+			<li>The value of each crystal is hidden from you until you click on it.</li>
+			<li>Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol>
+	</div>
+		<script  type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/crystalScript.js"></script>
+		
+</body>
+
+</html>
